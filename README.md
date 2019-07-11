@@ -13,7 +13,8 @@ The No Nonsense ATR also calculates the trading volume required for each trade a
 The No Nonsense ATR installation is exactly like any other indicator.
 * In MT4 select "File" -> "Open Data Folder"
 * Open the "MQL4" folder and then the "Indicators" folder
-* Copy the No_Nonsense_ATR.ex4 filte to the "Indicators" folder
+* Download the indicator by clicking "Clone or Download" and then "Download Zip"
+* Copy the No_Nonsense_ATR.ex4 file to the "Indicators" folder
 * Restart the MT4 or click Refresh in Navigator window
 * Search for "No_Nonsense_ATR" in the Navigator window and double-click it
 * Done!
@@ -60,7 +61,26 @@ double TP=iCustom(NULL,0,"No Nonsense ATR ",14,1.0,14,1.5,0,0,"=================
 double VOL=iCustom(NULL,0,"No Nonsense ATR ",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",true,3,2,"","","==========================",false,0,2,0);
 ```
 
+## Copyright and License
+No Nonsense ATR is open source software: you can redistribute it and/or modify it under the terms of the 
+GNU General Public License v3.0
 
+No Nonsense ATR was made available in the hope that it will be useful for traders, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the ![GNU General Public License v3.0](./LICENSE) for more details.
+
+ICON Used: Target market Icon 
+
+Artist: [GraphicLoads](http://graphicloads.com) - Iconset: [Flat Finance Icons (50 icons)](http://www.iconarchive.com/show/flat-finance-icons-by-graphicloads.html) - License: Freeware - Commercial usage: Allowed
+
+## Contributors
+
+Please feel free to comment, report issues, or contribute!
+
+Contact me by email: ruisilva.real@sapo.pt or in the [No Nonsense FOREX Discord](https://discordapp.com/invite/5TEY6h6)
+
+Consider donating through [PAYPAL](https://paypal.me/rpsreal). Thank you!
+
+
+Thanks to the [No Nonsense FOREX Discord](https://discordapp.com/invite/5TEY6h6) community for the suggestions to improve the No Nonsense ATR.
 
 Thank you VP for everything. Check the No Nonsense Forex strategy at: https://nononsenseforex.com/
 
