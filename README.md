@@ -23,13 +23,13 @@ sdksjfd
 
  ![inputs](./Images/painel_inputs.png)
 
-# Fillted ATR:
+### Fillted ATR:
 sdksjfd
 
-# Live Mode:
+### Live Mode:
 sdksjfd
 
-# iCustom:
+### iCustom:
 sdksjfd
 
  ![buffers](./Images/painel_buffers.png)
