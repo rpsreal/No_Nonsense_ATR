@@ -38,7 +38,8 @@ This mode can be activated in two ways: by clicking on the area without candles 
 
 ### Trading Volume:
 The No Nonsense ATR can be configured to show the trading volume by activating the input "TRADING_VOLUME".
-This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account balance and does not check the past balance or the simulator accounts balance.
+This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account balance and does not check the past balance or the simulator accounts balance. 
+You can choose between account balance, account equity or a fixed amount. If you choose a fixed value, fill in the "ACCOUNT_FIXED_VALUE" input with the desired value.
 
 It is possible to select the currency of the account making the calculation of trading volume more precise. If you select "COUNTER CURRENCY" then the calculation is made with the account basse currency equal to the counter currency of the pair you are trading.
 If you select one of the currencies you have to enter the suffix and/or the prefix of the other forex symbols in the "CUREENCY_SUFFIX" and "CUREENCY_PREFIX" respectively. For example: if the names of the forex pairs are "GBPUSDpro", "EURUSDpro" Put the word "pro" in the input "CUREENCY_SUFFIX".
