@@ -38,13 +38,13 @@ This mode can be activated in two ways: by clicking on the area without candles 
 
 ### Trading Volume:
 The No Nonsense ATR can be configured to show the trading volume by activating the input "TRADING_VOLUME".
-This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account balance and does not check the past balance or the balance of the simulator accounts.
+This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account balance and does not check the past balance or the simulator accounts balance.
 
 It is possible to select the currency of the account making the calculation of trading volume more precise. If you select "COUNTER CURRENCY" then the calculation is made with the account basse currency equal to the counter currency of the pair you are trading.
 If you select one of the currencies you have to enter the suffix and/or the prefix of the other forex symbols in the "CUREENCY_SUFFIX" and "CUREENCY_PREFIX" respectively. For example: if the names of the forex pairs are "GBPUSDpro", "EURUSDpro" Put the word "pro" in the input "CUREENCY_SUFFIX".
 
 ### Simulators:
-The No Nonsense ATR has been tested on the Soft4FX and FXBlue simulators and can be used together with the No Nonsense ATR without any problem. However, if the simulators stop at the opening of the candle and the result of the SL/TP and Trading volume will include the value of the candle newly opened for the calculation of the ATR. To display the values of the SL/TP and the Trading volume of the previous candle on the most recent candle just put the value 1 in the "SHIFT" input.
+The No Nonsense ATR has been tested on the Soft4FX and FXBlue simulators and can be used together with the No Nonsense ATR without any problem. However, if the simulators stop at the opening of the candle then the result of the SL/TP and Trading volume will include the value of the candle newly opened for the calculation of the ATR. To display the values of the SL/TP and the Trading volume of the previous candle on the most recent candle just put the value 1 in the "SHIFT" input.
 
 ### iCustom:
 The No Nonsense ATR offers 3 buffers. The NNFX_SL (SL), the NNFX_TP (TP), and the NNFX_TRADING_VOL (trading volume), which can be read externally through the function [iCustom](https://docs.mql4.com/indicators/icustom).
