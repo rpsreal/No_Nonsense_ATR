@@ -13,8 +13,8 @@ The No Nonsense ATR also calculates the trading volume required for each trade a
 The No Nonsense ATR installation is exactly like any other indicator.
 * In MT4 select "File" -> "Open Data Folder"
 * Open the "MQL4" folder and then the "Indicators" folder
-* Download the indicator by clicking "Clone or Download" and then "Download Zip"
-* Copy the No_Nonsense_ATR.ex4 file to the "Indicators" folder
+* Download the indicator by clicking on the ["No_Nonsense_ATR.ex4"](./No_Nonsense_ATR.ex4) file and then "Download"
+* Copy the [No_Nonsense_ATR.ex4](./No_Nonsense_ATR.ex4) file to the "Indicators" folder
 * Restart the MT4 or click Refresh in Navigator window
 * Search for "No_Nonsense_ATR" in the Navigator window and double-click it
 * Done!
