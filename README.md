@@ -34,7 +34,7 @@ If an extreme event is detected the candle size value is replaced by the average
 ### Live Mode:
 The Live Mode is designed to make it easier to use the indicator when trading in real time.
 In this mode, the values of SL/TP and trading volume are always fixed to the most recent value.
-This mode can be activated in two ways: by clicking on the area without candles in the right part of the graph (another clicks to disable the live mode) or changing the input "LIVE MODE" to true.
+This mode can be activated in two ways: by clicking on the area without candles in the right part of the graph (another click to disable the live mode) or changing the input "LIVE MODE" to true.
 
 ### Trading Volume:
 The No Nonsense ATR can be configured to show the trading volume by activating the input "TRADING_VOLUME".
