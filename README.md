@@ -4,7 +4,7 @@
 No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time.
 
 The indicator calculates the value of the SL/TP based on the [ATR](https://nononsenseforex.com/indicators/the-worlds-best-forex-indicator/) allowing to verify the historical data in a simple and practical way, showing not only the SL/TP values but also the place where they would be and if it was a gain or loss. 
-The No Nonsense ATR also calculates the trading volume required for each trade according to the desired risk, the SL and using the account currency for the calculation thus giving a more accurate value.
+The No Nonsense ATR also calculates the trading volume required for each trade according to the desired risk, using the SL and the account currency for the calculation thus giving a more accurate value.
 
 
  ![overview](./Images/overview.gif)
