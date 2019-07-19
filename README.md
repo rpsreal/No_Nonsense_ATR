@@ -1,7 +1,7 @@
 # No_Nonsense_ATR
 ## Overview
 
-No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time.
+No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time. Last Version - 5.70
 
 The indicator calculates the value of the SL/TP based on the [ATR](https://nononsenseforex.com/indicators/the-worlds-best-forex-indicator/) allowing to verify the historical data in a simple and practical way, showing not only the SL/TP values but also the place where they would be and if it was a gain or loss. 
 The No Nonsense ATR also calculates the trading volume required for each trade according to the desired risk, using the SL and the account currency for the calculation thus giving a more accurate value.
@@ -44,13 +44,15 @@ You can choose between account balance, account equity or a fixed amount. If you
 It is possible to select the currency of your account making the calculation of trading volume more precise. If you select "COUNTER CURRENCY" then the calculation is made with the account basse currency equal to the counter currency of the pair you are trading.
 If you select one of the currencies you have to enter the suffix and/or the prefix of the other forex symbols in the "CUREENCY_SUFFIX" and "CUREENCY_PREFIX" respectively. For example: if the names of the forex pairs are "GBPUSDpro", "EURUSDpro" Put the word "pro" in the input "CUREENCY_SUFFIX".
 
+You can select the trading volume value resolution up to 5 decimal places in the input "TRADING VOLUME RESOLUTION". The AUTO option sets the automatic resolution according to the trading account settings.
+
 ### Simulators:
 The No Nonsense ATR has been tested on the Soft4FX and FXBlue simulators and can be used together with the No Nonsense ATR without any problem. However, if the simulators stop at the opening of the candle then the result of the SL/TP and Trading volume will include the value of the candle newly opened for the calculations. To display the values of the SL/TP and the Trading volume of the previous candle on the most recent candle just put the value 1 in the "SHIFT" input.
 
 ### iCustom:
 The No Nonsense ATR offers 3 buffers. The NNFX_SL (SL), the NNFX_TP (TP), and the NNFX_TRADING_VOL (trading volume), which can be read externally through the function [iCustom](https://docs.mql4.com/indicators/icustom).
 
-**Attention**: The buffer NNFX_TRADING_VOL can only be read in candle 0 (shift=0) when the input "TRADING_VOLUME"=true
+**Attention**: The buffer NNFX_TRADING_VOL can not be read when the input TRADING_VOLUME=2 ("NEVER" option)
 
  ![buffers](./Images/painel_buffers.png)
 
@@ -58,15 +60,15 @@ The No Nonsense ATR offers 3 buffers. The NNFX_SL (SL), the NNFX_TP (TP), and th
 
 Save the SL value of the previous candle in the variable SL
 ```c++
-double SL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",false,1,0,0,0.0,"","","==========================",false,0,0,1);
+double SL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",2,1,0,0,0.0,"","",0,"==========================",false,0,0,1);
 ```
  Save the Filter TP value of the current candle in the variable TP
 ```c++
-double TP=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",True,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",false,1,0,0,0.0,"","","==========================",false,0,1,0);
+double TP=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",True,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",2,1,0,0,0.0,"","",0,"==========================",false,0,1,0);
 ```
  Save the trading volume value (account currency = EUR and Risk = 3%) in the variable VOL
 ```c++
-double VOL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",true,3,2,0,0.0,"","","==========================",false,0,2,0);
+double VOL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",0,3,2,0,0.0,"","",2,"==========================",false,0,2,0);
 ```
 
 ## Copyright and License
