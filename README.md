@@ -1,7 +1,7 @@
 # No_Nonsense_ATR
 ## Overview
 
-No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time. **Last Version - 5.70**
+No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time. **Last Version - 5.71**
 
 The indicator calculates the value of the SL/TP based on the [ATR](https://nononsenseforex.com/indicators/the-worlds-best-forex-indicator/) allowing to verify the historical data in a simple and practical way, showing not only the SL/TP values but also the place where they would be and if it was a gain or loss. 
 The No Nonsense ATR also calculates the trading volume required for each trade according to the desired risk, using the SL and the account currency for the calculation thus giving a more accurate value.
@@ -37,9 +37,9 @@ In this mode, the values of SL/TP and trading volume are always fixed to the mos
 This mode can be activated in two ways: by clicking on the area without candles in the right part of the graph (another click to disable the live mode) or changing the input "LIVE MODE" to true.
 
 ### Trading Volume:
-The No Nonsense ATR can be configured to show the trading volume by activating the input "TRADING_VOLUME".
-This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account balance and does not check the past balance or the simulator accounts balance. 
-You can choose between account balance, account equity or a fixed amount. If you choose a fixed value, fill in the "ACCOUNT_FIXED_VALUE" input with the desired value.
+The No Nonsense ATR can be configured to show the trading volume, if you are using one of the 28 forex pairs, by changing the input "SHOW TRADING VOLUME" to "ONLY ON LASTEST CANDLE" or "ALWAYS". 
+This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account value (balance, equity free margin or fixed value) and does not check the past value or the simulator accounts balance. 
+You can choose between account balance, account equity, account free margin or a fixed amount. If you choose a fixed value, fill in the "ACCOUNT_FIXED_VALUE" input with the desired value.
 
 It is possible to select the currency of your account making the calculation of trading volume more precise. If you select "COUNTER CURRENCY" then the calculation is made with the account basse currency equal to the counter currency of the pair you are trading.
 If you select one of the currencies you have to enter the suffix and/or the prefix of the other forex symbols in the "CUREENCY_SUFFIX" and "CUREENCY_PREFIX" respectively. For example: if the names of the forex pairs are "GBPUSDpro", "EURUSDpro" Put the word "pro" in the input "CUREENCY_SUFFIX".
