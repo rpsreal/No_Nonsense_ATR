@@ -73,9 +73,9 @@ double VOL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"=================
 
 ### ERRORS - About Zero Divide Error:
 There are several situations where the Zero Divide error may occur, in all of them the error is caused on purpose in order to stop the indicator operation. This is no reason to panic, and for most errors they can be resolved by simply changing the indicator inputs. 
-
 In case of error, a general message will appear in the chart. To know more details about the error check the alers or Experts tab.
- ![error](./Images/error_mens.png)
+
+![error](./Images/error_mens.png)
  
 * **(E01) This is not one of the 28 forex pairs and it is not possible to show the trading volume value.**
 The calculation of trading volume is not possible outside 28 pairs if the user chooses to use the base currency of the account in the input "ACCONT BASE CURRENCY". If "COUNTER CURRENCY" is selected the error will no longer show but the value of the trading volume has not been tested, so use with caution. Turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER" will also solve the problem.
