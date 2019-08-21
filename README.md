@@ -89,22 +89,21 @@ This error occurs when the user has selected their "ACCONT BASE CURRENCY" and th
 This error occurs when the calculated value of the trading volume is outside the range allowed by the broker. In this case the value of the trading volume cannot be used to trade and the error appears. Check if you have your selected currency in the input "ACCONT BASE CURRENCY". You can also solve the problem by selecting a resolution in the input "TRADING VOLUME RESOLUTION", (not the AUTO option), this will bypass this check.
 
 * **(E05) The value of the calculated trading volume ("trading volume value"=~"trading volume value rounded") is smaller than the minimum allowed by the broker ("min lot value by broker").**
-Like the E04 error this error occurs when the calculated value of the trading volume is outside the range allowed by the broker. In this case the value of the trading volume cannot be used to trade and the error appears. Check if you have your selected currency in the input "ACCONT BASE CURRENCY". You can also solve the problem by selecting a resolution in the input "TRADING VOLUME RESOLUTION", (not the AUTO option), this will bypass this check.
+Like the E04 error, this error occurs when the calculated value of the trading volume is outside the range allowed by the broker. In this case the value of the trading volume cannot be used to trade and the error appears. Check if you have your selected currency in the input "ACCONT BASE CURRENCY". You can also solve the problem by selecting a resolution in the input "TRADING VOLUME RESOLUTION", (not the AUTO option), this will bypass this check.
 
-* **(E06) Are not there enough candles in the chart? ("number of bars") Maybe reloading the indicator will solve the problem.** 
-This error occurs 
+* **(E06) Are not there enough candles in the chart? ("number of bars") Maybe reloading the indicator will solve the problem.** This error can occur when the indicator loads faster than the graph, in which case the indicator does not have enough candles to make the necessary calculations and produces this error. Changing the number of candles in the chart in the MT4 may help to prevent this problem from recurring, however resetting the indicator or changing the Time Frame solves the problem.
 
 * **(E07) You need more candles to calculate the number of values you want ("number of bars">"number of bars to calculate"). If you are using Filtered ATR then decrease the SAMPLE SIZE.** 
-This error occurs 
+When there are not enough candles to calculate the required values this error can occur. To solve it reduce the number of candles in the input "LOOKBACK CANDLES". If you are using the filted ATR function, reducing the value in the "SAMPLE SIZE" input may also solve the problem.
 
 * **(E08) The N OF HISTORY BARS ("number of bars") can not be higher than the number of candles available in the chart ("number of bars available in the chart")!** 
-This error occurs 
+There are not enough candles in the chart to make the calculations needed for the number of candles requested by the user. You have to decrease the number of candles in the input "LOOKBACK CANDLES" to solve the problem.
 
 * **(E09) The SAMPLE SIZE ("sample size value") can not be higher than the number of candles available in the chart ("number of bars available in the chart")!** 
-This error occurs 
+Decrease the number of candles on the "SAMPLE SIZE" input, or turn off the filted ATR function on the "FILTER ATR" input for the error to disappear.
 
 * **(E10) There must be at least "number of bars to calculate" candles available to calculate the filtered ATR! Candles available in the chart = "number of bars available in the chart".** 
-This error occurs 
+Filted ATR calculation requires more candles than normal ATR calculation. If the number of candles in the chart is not enough this error is shown to the user. To resolve this error, increase the number of candles in the input "LOOKBACK CANDLES", if this is not possible, decrease the value in the input "SAMPLE SIZE"
 
 
 ## Copyright and License
