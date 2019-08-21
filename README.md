@@ -71,41 +71,40 @@ double TP=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==================
 double VOL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",0,3,2,0,0.0,"","",2,"==========================",false,0,2,0);
 ```
 
-### ERRORS - About Zero Divide Error
+### ERRORS - About Zero Divide Error:
 There are several situations where the Zero Divide error may occur, in all of them the error is caused on purpose in order to stop the indicator operation. This is no reason to panic, and for most errors they can be resolved by simply changing the indicator inputs. 
 
 In case of error, a general message will appear in the chart. To know more details about the error check the alers or Experts tab.
  ![error](./Images/error_mens.png)
  
-**(E01) This is not one of the 28 forex pairs and it is not possible to show the trading volume value.
-* This error occurs when the user has selected their "ACCONT BASE CURRENCY" and there is not all the data needed to calculate the trading volume. To solve the problem, make sure the inputs "CURRENCY PREFIX" and "CURRENCY SUFFIX" are correct. If you are using a simulator then it may not be possible to obtain the necessary data to calculate the trading volume, in this case select "COUNTER CURRENCY" in the input "ACCONT BASE CURRENCY" or turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER".** 
+* **(E01) This is not one of the 28 forex pairs and it is not possible to show the trading volume value.**
+The calculation of trading volume is not possible outside 28 pairs if the user chooses to use the base currency of the account in the input "ACCONT BASE CURRENCY". If "COUNTER CURRENCY" is selected the error will no longer show but the value of the trading volume has not been tested, so use with caution. Turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER" will also solve the problem.
  
-**(E02) The "symbol name" pair does not exist or is not possible to obtain the price. Offline graph? Select COUNTER CURRENCY as ACCOUNT BASE CURRENCY.** 
-* This error occurs when the user has selected their "ACCONT BASE CURRENCY" and there is not all the data needed to calculate the trading volume. To solve the problem, make sure the inputs "CURRENCY PREFIX" and "CURRENCY SUFFIX" are correct. If you are using a simulator then it may not be possible to obtain the necessary data to calculate the trading volume, in this case select "COUNTER CURRENCY" in the input "ACCONT BASE CURRENCY" or turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER".
+* **(E02) The "symbol name" pair does not exist or is not possible to obtain the price. Offline graph? Select COUNTER CURRENCY as ACCOUNT BASE CURRENCY.** 
+This error occurs when the user has selected their "ACCONT BASE CURRENCY" and there is not all the data needed to calculate the trading volume. To solve the problem, make sure the inputs "CURRENCY PREFIX" and "CURRENCY SUFFIX" are correct. If you are using a simulator then it may not be possible to obtain the necessary data to calculate the trading volume, in this case select "COUNTER CURRENCY" in the input "ACCONT BASE CURRENCY" or turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER".
 
-**(E03) Could not get STEP LOT ("step lot value"), MIN LOT ("min lot value") and MAX LOT ("max lot value") size value.** 
-* This error occurs 
+* **(E03) Could not get STEP LOT ("step lot value"), MIN LOT ("min lot value") and MAX LOT ("max lot value") size value.** You will probably be using an offline simulator or graphics when this error appears. In this case it is not possible to use the "AUTO" option in the "TRADING VOLUME RESOLUTION" input, you need to select another resolution.
 
-**(E04) The value of the calculated trading volume ("trading volume value"=~"trading volume value rounded") is bigger than the maximum allowed by the broker ("max lot value by broker").** 
-* This error occurs 
+* **(E04) The value of the calculated trading volume ("trading volume value"=~"trading volume value rounded") is bigger than the maximum allowed by the broker ("max lot value by broker").** 
+This error occurs when the calculated value of the trading volume is outside the range allowed by the broker. In this case the value of the trading volume cannot be used to trade and the error appears. Check if you have your selected currency in the input "ACCONT BASE CURRENCY". You can also solve the problem by selecting a resolution in the input "TRADING VOLUME RESOLUTION", (not the AUTO option), this will bypass this check.
 
-**(E05) The value of the calculated trading volume ("trading volume value"=~"trading volume value rounded") is smaller than the minimum allowed by the broker ("min lot value by broker").**
-* This error occurs 
+* **(E05) The value of the calculated trading volume ("trading volume value"=~"trading volume value rounded") is smaller than the minimum allowed by the broker ("min lot value by broker").**
+Like the E04 error this error occurs when the calculated value of the trading volume is outside the range allowed by the broker. In this case the value of the trading volume cannot be used to trade and the error appears. Check if you have your selected currency in the input "ACCONT BASE CURRENCY". You can also solve the problem by selecting a resolution in the input "TRADING VOLUME RESOLUTION", (not the AUTO option), this will bypass this check.
 
-**(E06) Are not there enough candles in the chart? ("number of bars") Maybe reloading the indicator will solve the problem.** 
-* This error occurs 
+* **(E06) Are not there enough candles in the chart? ("number of bars") Maybe reloading the indicator will solve the problem.** 
+This error occurs 
 
-**(E07) You need more candles to calculate the number of values you want ("number of bars">"number of bars to calculate"). If you are using Filtered ATR then decrease the SAMPLE SIZE.** 
-* This error occurs 
+* **(E07) You need more candles to calculate the number of values you want ("number of bars">"number of bars to calculate"). If you are using Filtered ATR then decrease the SAMPLE SIZE.** 
+This error occurs 
 
-**(E08) The N OF HISTORY BARS ("number of bars") can not be higher than the number of candles available in the chart ("number of bars available in the chart")!** 
-* This error occurs 
+* **(E08) The N OF HISTORY BARS ("number of bars") can not be higher than the number of candles available in the chart ("number of bars available in the chart")!** 
+This error occurs 
 
-**(E09) The SAMPLE SIZE ("sample size value") can not be higher than the number of candles available in the chart ("number of bars available in the chart")!** 
-* This error occurs 
+* **(E09) The SAMPLE SIZE ("sample size value") can not be higher than the number of candles available in the chart ("number of bars available in the chart")!** 
+This error occurs 
 
-**(E10) There must be at least "number of bars to calculate" candles available to calculate the filtered ATR! Candles available in the chart = "number of bars available in the chart".** 
-* This error occurs 
+* **(E10) There must be at least "number of bars to calculate" candles available to calculate the filtered ATR! Candles available in the chart = "number of bars available in the chart".** 
+This error occurs 
 
 
 ## Copyright and License
