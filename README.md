@@ -71,6 +71,23 @@ double TP=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==================
 double VOL=iCustom(NULL,0,"No_Nonsense_ATR",14,1.0,14,1.5,0,0,"==========================",False,3.0,200,"==========================",false,0,14,Gold,Gold,false,Black,"==========================",false,false,false,false,false,0,DeepSkyBlue,0,Red,"==========================",0,3,2,0,0.0,"","",2,"==========================",false,0,2,0);
 ```
 
+### ERRORS - About Zero Divide Error
+There are several situations where the Zero Divide error may occur, in all of them the error is caused on purpose in order to stop the indicator operation. This is no reason to panic, and for most errors they can be resolved by simply changing the indicator inputs. 
+
+In case of error, a general message will appear in the chart. To know more details about the error check the alers or Experts tab.
+ ![error](./Images/error_mens.png)
+ 
+**(E01)** This is not one of the 28 forex pairs and it is not possible to show the trading volume value.
+* This error occurs when the user has selected their "ACCONT BASE CURRENCY" and there is not all the data needed to calculate the trading volume. To solve the problem, make sure the inputs "CURRENCY PREFIX" and "CURRENCY SUFFIX" are correct. If you are using a simulator then it may not be possible to obtain the necessary data to calculate the trading volume, in this case select "COUNTER CURRENCY" in the input "ACCONT BASE CURRENCY" or turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER".
+ 
+**(E02)** The "symbol name" pair does not exist or is not possible to obtain the price. Offline graph? Select COUNTER CURRENCY as ACCOUNT BASE CURRENCY.
+* This error occurs when the user has selected their "ACCONT BASE CURRENCY" and there is not all the data needed to calculate the trading volume. To solve the problem, make sure the inputs "CURRENCY PREFIX" and "CURRENCY SUFFIX" are correct. If you are using a simulator then it may not be possible to obtain the necessary data to calculate the trading volume, in this case select "COUNTER CURRENCY" in the input "ACCONT BASE CURRENCY" or turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER".
+
+**(E02)** 
+**(E03)** 
+**(E04)** 
+
+
 ## Copyright and License
 No Nonsense ATR is open source software: you can redistribute it and/or modify it under the terms of the 
 GNU General Public License v3.0
