@@ -1,7 +1,7 @@
 # No_Nonsense_ATR
 ## Overview
 
-No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time. **Last Version - 5.72**
+No Nonsense ATR is a tool designed to help the [NNFX Traders](https://nononsenseforex.com/) backtest strategies and trading in real time. **Last Version - 5.73**
 
 The indicator calculates the value of the SL/TP based on the [ATR](https://nononsenseforex.com/indicators/the-worlds-best-forex-indicator/) allowing to verify the historical data in a simple and practical way, showing not only the SL/TP values but also the place where they would be and if it was a gain or loss. 
 The No Nonsense ATR also calculates the trading volume required for each trade according to the desired risk, using the SL and the account currency for the calculation thus giving a more accurate value.
@@ -17,6 +17,12 @@ The No Nonsense ATR installation is exactly like any other indicator.
 * Copy the [No_Nonsense_ATR.ex4](./No_Nonsense_ATR.ex4) file to the "Indicators" folder
 * Restart the MT4 or click Refresh in Navigator window
 * Search for "No_Nonsense_ATR" in the Navigator window and double-click it
+* Done!
+
+The No Nonsense ATR is available on MQL5 Market
+* In MT4 Terminal select the Market tab
+* Search for "No Nonsense ATR"
+* Download the indicator
 * Done!
 
  ![inicial](./Images/painel_inicial.png)
@@ -105,16 +111,14 @@ Decrease the number of candles on the "SAMPLE SIZE" input, or turn off the filte
 * **(E10) There must be at least "number of bars to calculate" candles available to calculate the filtered ATR! Candles available in the chart = "number of bars available in the chart".** 
 Filted ATR calculation requires more candles than normal ATR calculation. If the number of candles in the chart is not enough this error is shown to the user. To resolve this error, increase the number of candles in the input "LOOKBACK CANDLES", if this is not possible, decrease the value in the input "SAMPLE SIZE"
 
+* **(E11) ATR SHIFT cannot be a negative value (ATR SHIFT= "ATR_SHIFT" ).** 
+Put zero or a positive value in the input "ATR SHIFT".
 
 ## Copyright and License
 No Nonsense ATR is open source software: you can redistribute it and/or modify it under the terms of the 
 GNU General Public License v3.0
 
 No Nonsense ATR was made available in the hope that it will be useful for traders, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the ![GNU General Public License v3.0](./LICENSE) for more details.
-
-ICON Used: Target market Icon 
-
-Artist: [GraphicLoads](http://graphicloads.com) - Iconset: [Flat Finance Icons (50 icons)](http://www.iconarchive.com/show/flat-finance-icons-by-graphicloads.html) - License: Freeware - Commercial usage: Allowed
 
 ## Contributors
 
