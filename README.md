@@ -13,7 +13,7 @@ The No Nonsense ATR also calculates the trading volume required for each trade a
 The No Nonsense ATR installation is exactly like any other indicator.
 * In MT4 select "File" -> "Open Data Folder"
 * Open the "MQL4" folder and then the "Indicators" folder
-* Download the indicator by clicking on the ["No_Nonsense_ATR.ex4"](./No_Nonsense_ATR.ex4) file and then "Download"
+* Download the indicator by clicking here: [No_Nonsense_ATR.ex4](https://nnfxalgotester.com/download/)
 * Copy the [No_Nonsense_ATR.ex4](./No_Nonsense_ATR.ex4) file to the "Indicators" folder
 * Restart the MT4 or click Refresh in Navigator window
 * Search for "No_Nonsense_ATR" in the Navigator window and double-click it
@@ -43,7 +43,7 @@ In this mode, the values of SL/TP and trading volume are always fixed to the mos
 This mode can be activated in two ways: by clicking on the area without candles in the right part of the graph (another click to disable the live mode) or changing the input "LIVE MODE" to true.
 
 ### Trading Volume:
-The No Nonsense ATR can be configured to show the trading volume, if you are using one of the 35 forex pairs (USD, EUR, GBP, CHF, AUD, CAD, NZD, JPY, SGD), by changing the input "SHOW TRADING VOLUME" to "ONLY ON LASTEST CANDLE" or "ALWAYS". 
+The No Nonsense ATR can be configured to show the trading volume, if you are using one of the 36 forex pairs (USD, EUR, GBP, CHF, AUD, CAD, NZD, JPY, SGD), by changing the input "SHOW TRADING VOLUME" to "ONLY ON LASTEST CANDLE" or "ALWAYS". 
 This feature is especially for real-time trading and not for backtest with or without simulators because for the trading volume calculation uses the current account value (balance, equity free margin or fixed value) and does not check the past value or the simulator accounts balance. 
 You can choose between account balance, account equity, account free margin or a fixed amount. If you choose a fixed value, fill in the "ACCOUNT_FIXED_VALUE" input with the desired value.
 
@@ -83,8 +83,8 @@ In case of error, a general message will appear in the chart. To know more detai
 
 ![error](./Images/error_mens.png)
  
-* **(E01) This is not one of the 35 forex pairs and it is not possible to show the trading volume value.**
-The calculation of trading volume is not possible outside 35 pairs if the user chooses to use the base currency of the account in the input "ACCONT BASE CURRENCY". If "COUNTER CURRENCY" is selected the error will no longer show but the value of the trading volume has not been tested, so use with caution. Turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER" will also solve the problem.
+* **(E01) This is not one of the 36 forex pairs and it is not possible to show the trading volume value.**
+The calculation of trading volume is not possible outside 36 pairs if the user chooses to use the base currency of the account in the input "ACCONT BASE CURRENCY". If "COUNTER CURRENCY" is selected the error will no longer show but the value of the trading volume has not been tested, so use with caution. Turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER" will also solve the problem.
  
 * **(E02) The "symbol name" pair does not exist or is not possible to obtain the price. Offline graph? Select COUNTER CURRENCY as ACCOUNT BASE CURRENCY.** 
 This error occurs when the user has selected their "ACCONT BASE CURRENCY" and there is not all the data needed to calculate the trading volume. To solve the problem, make sure the inputs "CURRENCY PREFIX" and "CURRENCY SUFFIX" are correct. If you are using a simulator then it may not be possible to obtain the necessary data to calculate the trading volume, in this case select "COUNTER CURRENCY" in the input "ACCONT BASE CURRENCY" or turn off this function by changing the input "SHOW TRADING VOLUME" to "NEVER".
@@ -125,11 +125,7 @@ No Nonsense ATR was made available in the hope that it will be useful for trader
 Please feel free to comment, report issues, or contribute!
 
 Contact me by:
-Email: ruisilva.real@sapo.pt 
-In the [No Nonsense FOREX Discord](https://discordapp.com/invite/HAZ2DFE)
-MQL5 website: https://www.mql5.com/en/users/rpsreal
-
-Consider donating through [PAYPAL](https://paypal.me/rpsreal). Thank you!
+Email: support@nnfxalgotester.com
 
 
 Thanks to the [No Nonsense FOREX Discord](https://discordapp.com/invite/HAZ2DFE) community for the suggestions to improve the No Nonsense ATR.
