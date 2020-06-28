@@ -124,12 +124,8 @@ No Nonsense ATR was made available in the hope that it will be useful for trader
 
 Please feel free to comment, report issues, or contribute!
 
-Contact me by:
-Email: support@nnfxalgotester.com
+Contact me by email: support@nnfxalgotester.com or in the [NNFX Algo Tester Discord](https://discord.com/invite/bykjgF2) (English ou em Português)
 
+Thank you VP for everything. Check the No Nonsense Forex strategy at: nononsenseforex.com
 
-Thanks to the [No Nonsense FOREX Discord](https://discordapp.com/invite/HAZ2DFE) community for the suggestions to improve the No Nonsense ATR.
-
-Thank you VP for everything. Check the No Nonsense Forex strategy at: https://nononsenseforex.com/
-
-Developed by Rui Silva, Porto, Portugal
+Developed by Rui Silva (rpsreal), Portugal
