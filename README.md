@@ -10,7 +10,7 @@ The No Nonsense ATR also calculates the trading volume required for each trade a
  ![overview](./Images/overview.gif)
  
  
-## [Download Indicator](https://nnfxalgotester.com/downloads/No_Nonsense_ATR.ex4)
+## [Download Indicator](https://nnfxalgotester.com/downloads/NO NONSENSE ATR.ex4)
 
 ## [Help/Instructions/Source Code](https://nnfxalgotester.com/help/no-nonsense-atr/)
 
